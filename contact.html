@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeMartFan - Contact</title>
+    <link rel="icon" type="image/x-icon" href="../assets/susti 56.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="../styles/mobileStyles.css" rel="stylesheet">
+    <link href="../styles/tabletStyles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v14.0" nonce="Nw4OY6xO"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<Header>
+    <!--  Navbar-->
+        <nav class="contenedor-padre">
+            <div class="icono-navbar col-4">
+                <a href="../index.html"> <img src="../assets/Logo_PokeMartFan.jpg"  alt="Logo_PokeMartFan" width="200" height="100"> </a>
+            </div>
+
+            <div>
+              <img class="menuIcono" onclick="accion()" src ="../assets/list.svg" alt="Icono_Menu"/>
+          </div>
+     
+            <div class="contenedor-links col-8">
+                <ul>
+                    <a class="elementos-navbar desaparece" href="../index.html">Home</a>
+
+                    <a class="elementos-navbar desaparece" href="./about.html">Acerca de</a>
+            
+                    <a class= "elementos-navbar desaparece" href="./products.html">Productos</a>
+             
+                    <a class= "elementos-navbar desaparece" href="./contact.html">Contacto</a>
+                
+                    <a class="elementos-navbar desaparece" href="./rrss.html">RRSS</a>
+                </ul>
+            </div>
+        </nav>
+
+        <script>
+          function accion(){
+              var ancla = document.getElementsByClassName('elementos-navbar');
+              for(var i = 0; i < ancla.length; i++){
+                  ancla[i].classList.toggle('desaparece');
+              }
+          }
+          </script>
+  
+  </Header>
+
+    <main>
+        <!--Form para el correo-->
+        <div class="contenedorContacto">
+            <section class="formularioContainer">
+            <h3 class="preMapa">Mandanos un correo para comunicarte con Nosotros </h3>
+        
+            <form method="post" action="mailto:contacto@pokemartfans.com">
+                
+                <div class="formCampos">
+                    <label for="Name">Nombre:</label>
+                    <div class="textCampo" width="50px">
+                        <input type="text" id="Name" name="Name" required>
+                    </div>
+                </div>
+
+                <div class="formCampos">
+                    <label for="Phone">Telefono:</label>
+                    <div class="textCampo">
+                        <input type="text" id="Phone" name="Phone" required>
+                    </div>
+                </div>
+        
+                <div class="formCampos">
+                    <label for="Email">Correo:</label>
+                    <div class="textCampo">
+                        <input type="email" id="Email" name="Email" required>
+                    </div>
+                </div>
+        
+                <div class="formCampos">
+                    <label for="Message">Mensaje:</label>
+                    <div class="textCampo">
+                        <textarea id="Message" name="Message" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+        
+                <div class="preBoton">
+                    <button class="botonForm" type="submit" value="Submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+<!--Locacion-->
+                <aside class="mapaContainer">
+                <h4 class="preMapa">Nos puedes ir a Visitar a esta Direccion:</h4><br>
+
+                <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d444668.196200477!2d-98.79457021757408!3d29.4588780836983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c6be71d0ad54d%3A0xb8f8202dbd51c74f!2sPok%C3%A9mon%20Sells!5e0!3m2!1ses!2scl!4v1658855508850!5m2!1ses!2scl"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <br>
+                <div class="direccion">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                </svg>
+                <p class="direccionLocal"> Av. Villa Floaroma # 3456 <br> Cuidad Canal <br> Sinnoh </p>
+                </div>
+                </aside>
+        </div>
+    </main>
+
+
+
+
+
+<!--footer-->
+<footer class="contenedor-footer">
+    <div class="elementos-footer list-inline mt-2 text-center">
+        <p >Creado por Dpad Services®.</p>
+    </div>
+  
+    <div class="lista-iconos">
+        <ol class="list-inline mt-2">
+        <li class="list-inline-item"> <img class="iconos-footer" src ="../assets/facebook.svg" alt="PokeMartFan_Facebook"/></li>
+        <li class="list-inline-item"> <img class="iconos-footer" src ="../assets/twitter.svg" alt="PokeMartFan_Twitter"/></li>
+        <li class="list-inline-item"> <img class="iconos-footer" src ="../assets/instagram.svg" alt="PokeMartFan_Instagram"/></li>
+        <li class="list-inline-item"> <img class="iconos-footer" src ="../assets/youtube.svg" alt="PokeMartFan_Youtube"/></li>
+        </ol>
+    </div>
+  
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+      </html>
