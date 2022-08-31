@@ -11,111 +11,196 @@
     <link href="./styles/styles.css" rel="stylesheet">
     <link href="./styles/mobileStyles.css" rel="stylesheet">
     <link href="./styles/tabletStyles.css" rel="stylesheet">
-
+    <link href="./styles/mobilexs.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <Header>
-<!--  Navbar-->
-    <nav class="contenedor-padre">
-        <div class="icono-navbar col-4">
-            <a href="./index.html"> <img src="./assets/Logo_PokeMartFan.jpg"  alt="Logo_PokeMartFan" border width="200" height="100"> </a>
-        </div>
-
-            <div>
-                <img class="menuIcono" onclick="accion()" src ="./assets/list.svg" alt="Icono_Menu"/>
-            </div>
-   
-        <div class="contenedor-links col-8">
-   
-            
-            <ul>
-            <a class="elementos-navbar desaparece" href="./index.html">Home</a>
-           
-            <a class=" elementos-navbar desaparece" href="./components/about.html">Acerca de</a>
-    
-            <a class= "elementos-navbar desaparece" href="./components/products.html">Productos</a>
-     
-            <a class= "elementos-navbar desaparece" href="./components/contact.html">Contacto</a>
+        <!--  Navbar-->
+            <nav class="contenedor-padre">
+                <div class="icono-navbar col-4">
+                    <a href="./index.html"> <img src="./assets/Logo_PokeMartFan.jpg"  alt="Logo_PokeMartFan" border width="200" height="100"> </a>
+                </div>
         
-            <a class=" elementos-navbar desaparece" href="./components/rrss.html">RRSS</a>
-            </ul>
-        </div>
-    </nav>
-
-    <script>
-        function accion(){
-            var ancla = document.getElementsByClassName('elementos-navbar');
-            for(var i = 0; i < ancla.length; i++){
-                ancla[i].classList.toggle('desaparece');
-            }
-        }
-        </script>
-
-
-    </Header>
-
-<!--Main de Index-->
-    <main>
-        <img src="./assets/Logo_PokeMartFan.jpg" alt="Logo_PokeMartFan" width="100%" height="400px">
-        <h1 class="slogan"> Somos la Empresa mas grande de todo el mundo en la venta de productos de Pokemon llevada por y para fans.</h1>
-
-
-
-        <h2 class="preLogos">Estas empresas nos Respaldan:</h2>
-
-
-        <div class="logosEmpresas">
-
-            <img src="./assets/yoshida'scoffee.png" class="imgLogos" alt="Cafeteria yoshida">
-
-            <img src="./assets/Macro_Cosmos_logo.webp" class="imgLogos" alt="MacroCosmos Inc.">
+                    <div>
+                        <img class="menuIcono" onclick="accion()" src ="./assets/list.svg" alt="Icono_Menu"/>
+                    </div>
+           
+                <div class="contenedor-links col-8">
+           
+                    
+                    <ul>
+                    <a class="elementos-navbar desaparece" href="./index.html">Home</a>
+                   
+                    <a class=" elementos-navbar desaparece" href="./components/about.html">Acerca de</a>
             
-            <img src="./assets/densoku.png" class="imgLogos" alt="Boltund Express Package">
-
-            <img src="./assets/galartaxi.png" class="imgLogos" alt="Corviknight Taxis">
-
-            <img src="./assets/Galarminerals.webp" class="imgLogos" alt="Galar Minerals">
-            
-            <img src="./assets/jqediww6vtlke2ovueb4.webp" class="imgLogos" alt="Altru Inc.">
-
-            <img src="./assets/Logo_MC_Brokerage.webp" class="imgLogos" alt="PokeJobs Inc.">
-
-            <img src="./assets/Logo_Team_Flare.webp" class="imgLogos" alt="Flare Labs.">
-
-            <img src="./assets/Devon.jpg" class="imgLogos" alt="Devon Corporation">
-
-            <img src="./assets/Pokego.jpg" class="imgLogos" alt="Pokemon Go">
-
-            <img src="./assets/lacostepoke.png" class="imgLogos" alt="Lacostpoke">
-
-            <img src="./assets/netease_logo.webp" class="imgLogos" alt="netease_logo">
-
-            <img src="./assets/machmotors.png" class="imgLogos" alt="mach_motors">
-
-            <img src="./assets/Mawlie Comp.jpg" class="imgLogos" alt="Mawlie_corp">
-
-            <img src="./assets/silph_co_horizontal_by_biochao_dezuczw-fullview.png" class="imgLogos" alt="silph_logo">
-
+                    <a class= "elementos-navbar desaparece" href="./components/products.html">Productos</a>
+             
+                    <a class= "elementos-navbar desaparece" href="./components/contact.html">Contacto</a>
+                
+                    <a class=" elementos-navbar desaparece" href="./components/rrss.html">RRSS</a>
+                    </ul>
+                </div>
+            </nav>
+        
+            <script>
+                function accion(){
+                    var ancla = document.getElementsByClassName('elementos-navbar');
+                    for(var i = 0; i < ancla.length; i++){
+                        ancla[i].classList.toggle('desaparece');
+                    }
+                }
+                </script>
+        
+        
+            </Header>
+     <main>      
+    <img src="./assets/Logo_PokeMartFan.jpg" alt="Logo_PokeMartFan" width="100%" height="400px"> 
+    <div class="py-20 bg-bg-3 text-center">
+        <div class="container">
+            <h2 class="display-3 mb-4 mb-xl-6 slogan">
+                         Somos la Empresa mas grande de todo el mundo en la venta de productos de Pokemon llevada por y para fans.
+            </h2>
+            <p class="fs-1 mb-6 mb-md-8 remove-br preLogos">
+                        Estas empresas nos Respaldan :
+            </p>
         </div>
+    </div>
 
-<div class="productoDestacado">
-            <section class="detallDestac">
-            <h2 class="preDestac">Producto Destacado</h2>
-            <p class="parrDestac">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, minima? Reiciendis esse rem sint dolore praesentium voluptatem nemo placeat aliquid ipsum voluptas, debitis nostrum unde inventore aperiam, accusantium dignissimos repellendus!
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, minima? Reiciendis esse rem sint dolore praesentium voluptatem nemo placeat aliquid ipsum voluptas, debitis nostrum unde inventore aperiam, accusantium dignissimos repellendus!
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, minima? Reiciendis esse rem sint dolore praesentium voluptatem nemo placeat aliquid ipsum voluptas, debitis nostrum unde inventore aperiam, accusantium dignissimos repellendus!
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, minima? Reiciendis esse rem sint dolore praesentium voluptatem nemo placeat aliquid ipsum voluptas, debitis nostrum unde inventore aperiam, accusantium dignissimos repellendus!</p>
-            </section>
+    <section class="py-10 py-lg-20 bg-bg-3">
+        <div class="container">
+            <div class="row justify-content-center justify-content-md-start">
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                    <div>
+                        <a class="w-100 ">
+                            <img src="./assets/yoshida'scoffee.png" class="img-fluid mb-4 w-100" alt="Cafeteria yoshida">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                    <div>
+                        <a class="w-100 ">
+                            <img src="./assets/Macro_Cosmos_logo.webp" alt="MacroCosmos Inc." class="img-fluid mb-4 w-100">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                   <div>
+                        <a class="w-100 ">
+                            <img src="./assets/densoku.png" alt="Boltund Express Package" class="img-fluid mb-4 w-100">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                    <div>
+                        <a  class="w-100 ">
+                            <img src="./assets/galartaxi.png" alt="Corviknight Taxis" class="img-fluid mb-4 w-100">
+                        </a>
+                    </div>
+                </div>
 
-            <aside class="imgContainer">
-            <img src="./assets/Sustituto.jpg" class="imgDestac" alt="netease_logo">
-            </aside>
 
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                    <div>
+                        <a class="w-100 ">
+                            <img src="./assets/Galarminerals.webp" alt="Galar Minerals" class="img-fluid mb-4 w-100">                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                    <div>
+                        <a class="w-100 ">
+                            <img src="./assets/jqediww6vtlke2ovueb4.webp" alt="Altru Inc." class="img-fluid mb-4 w-100">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                   <div>
+                        <a class="w-100 ">
+                            <img src="./assets/Logo_MC_Brokerage.webp" alt="PokeJobs Inc." class="img-fluid mb-4 w-100">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                    <div>
+                        <a class="w-100 ">
+                            <img src="./assets/Logo_Team_Flare.webp" alt="Flare Labs." class="img-fluid mb-4 w-100">
+                        </a>
+                    </div>
+                </div>
+
+
+                
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                    <div>
+                        <a class="w-100 ">
+                            <img src="./assets/Devon.jpg" alt="Devon Corporation" class="img-fluid mb-4 w-100">                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                    <div>
+                        <a class="w-100 ">
+                            <img src="./assets/Pokego.jpg" alt="Pokemon Go" class="img-fluid mb-4 w-100">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                   <div>
+                        <a class="w-100 ">
+                            <img src="./assets/lacostepoke.png" alt="Lacostpoke" class="img-fluid mb-4 w-100">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                    <div>
+                        <a class="w-100 ">
+                            <img src="./assets/netease_logo.webp" alt="netease_logo" class="img-fluid mb-4 w-100">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                    <div>
+                        <a class="w-100 ">
+                            <img src="./assets/machmotors.png" alt="mach_motors" class="img-fluid mb-4 w-100">                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                    <div>
+                        <a class="w-100 ">
+                            <img src="./assets/Mawlie Comp.jpg" alt="Mawlie_corp" class="img-fluid mb-4 w-100">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-10">
+                   <div>
+                        <a class="w-100 ">
+                            <img src="./assets/silph_co_horizontal_by_biochao_dezuczw-fullview.png" alt="silph_logo" class="img-fluid mb-4 w-100">
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 py-lg-20 mb-1 bg-bg-3">
+        <div class="container contenido">
+            <div class="row align-items-md-center justify-content-between">
+                <div class="mb-8 mb-md-0 col-md-7 col-lg-6 col-xl-5 col-xxl-4 detallDestac">
+                    <h2 class="preDestac">Producto Destacado</h2>
+                     <p class="parrDestac">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, minima? Reiciendis esse rem sint dolore praesentium voluptatem nemo placeat aliquid ipsum voluptas, debitis nostrum unde inventore aperiam, accusantium dignissimos repellendus!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, minima? Reiciendis esse rem sint dolore praesentium voluptatem nemo placeat aliquid ipsum voluptas, debitis nostrum unde inventore aperiam, accusantium dignissimos repellendus!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, minima? Reiciendis esse rem sint dolore praesentium voluptatem nemo placeat aliquid ipsum voluptas, debitis nostrum unde inventore aperiam, accusantium dignissimos repellendus!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, minima? Reiciendis esse rem sint dolore praesentium voluptatem nemo placeat aliquid ipsum voluptas, debitis nostrum unde inventore aperiam, accusantium dignissimos repellendus!</p>
+                </div>
+                <div class="col-md-5 col-xl-6">
+                    <img src="./assets/Sustituto.jpg" class="img-fluid imgDestac" alt="netease_logo">			
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
-
 
 <div class="gridcontainer">
 
