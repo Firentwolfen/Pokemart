@@ -1,0 +1,432 @@
+.contenedor-footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.elementos-footer {
+  background-color: black;
+  color: white;
+  align-self: center;
+  justify-self: center;
+  text-decoration: none;
+}
+
+.lista-iconos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-twitter {
+  background-color: #1DA1F2;
+}
+
+.footer-facebook {
+  background-color: #1877f2;
+}
+
+.footer-instagram {
+  background-color: #9E37B8;
+}
+
+.footer-youtube {
+  background-color: #FF0000;
+}
+
+/*navbar*/
+.contenedor-padre {
+  background-color: black;
+  display: flex;
+  padding: 10px;
+}
+
+.contenedor-links {
+  justify-content: center;
+}
+
+.elementos-navbar {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 50px 30px;
+  text-decoration: none;
+  border-radius: 10%;
+}
+.elementos-navbar:hover {
+  background-color: red;
+  color: black;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+.elementos-navbar:active {
+  background-color: white;
+  color: black;
+}
+
+.icono-navbar {
+  display: flex;
+  padding: 10px;
+  justify-content: left;
+}
+
+.menuIcono {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  display: none;
+}
+
+/*index*/
+.logosEmpresas {
+  justify-content: space-between;
+  padding: 10vh 30vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.imgLogos {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  margin: 10vh 0vh;
+}
+
+.slogan {
+  font-family: "Work Sans", sans-serif;
+  font-size: 500;
+  margin: 10px 20px;
+  text-align: justify;
+}
+
+.preLogos {
+  font-family: "Work Sans", sans-serif;
+  font-size: 400;
+  text-align: center;
+}
+
+.productoDestacado {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.detallDestac {
+  background-color: red;
+  margin: 0px 20px;
+  text-align: justify;
+  border-radius: 40px;
+}
+
+.preDestac {
+  padding-top: 30px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 400;
+  text-align: center;
+  color: white;
+}
+.preDestac:hover {
+  -webkit-animation: bounce;
+          animation: bounce;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.parrDestac {
+  text-align: justify;
+  color: white;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.parrDestac:hover {
+  -webkit-animation: flash;
+          animation: flash;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.imgDestac {
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  margin: 20px;
+}
+.imgDestac:hover {
+  -webkit-animation: bounceIn;
+          animation: bounceIn;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.item-a {
+  grid-area: header;
+}
+
+.item-b {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+}
+
+.item-c {
+  grid-area: footer;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  justify-items: center;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 15px;
+  background-color: grey;
+}
+
+.seccionProductos {
+  padding-bottom: 30px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 400;
+  text-align: center;
+  color: white;
+}
+
+.imgProxProd {
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+/*about*/
+.sobreNosotros {
+  padding: 10px 10px;
+  background-color: rgb(2, 116, 30);
+  display: flex;
+}
+
+.textoNosotros {
+  font-family: "Work Sans", sans-serif;
+  font-size: 50;
+  font-size: large;
+  color: white;
+  text-align: justify;
+  margin-right: 10px;
+}
+
+.preNosotros {
+  font-family: "Work Sans", sans-serif;
+  font-size: 400;
+  text-align: center;
+  color: white;
+}
+
+.yt {
+  height: 315px;
+  width: 560px;
+}
+
+.slider {
+  display: flexbox;
+  width: 100%;
+}
+
+.preSlider {
+  font-family: "Work Sans", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  color: black;
+  background-color: red;
+  border-radius: 10px;
+  margin: 10px 400px;
+}
+
+.tituloSlide, .parrafoSlide {
+  border-radius: 500px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(255, 255, 255);
+}
+
+/*products*/
+.cardProductos {
+  justify-content: space-around;
+  padding: 50px;
+  gap: 50px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.imgProducto {
+  height: 275px;
+  width: 275px;
+}
+
+/*contact*/
+.contenedorContacto {
+  justify-content: space-between;
+  padding: 10vh 20vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.direccion {
+  display: flex;
+  justify-content: center;
+}
+
+.preMapa {
+  font-family: "Work Sans", sans-serif;
+  font-size: 200;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.direccionLocal {
+  text-align: center;
+}
+
+.googleMap {
+  height: 300px;
+  width: 400px;
+}
+
+.formCampos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.textCampo {
+  margin-bottom: 20px;
+}
+
+.preBoton {
+  text-align: center;
+}
+
+.botonForm {
+  background-color: brown;
+  color: white;
+  align-self: end;
+}
+
+/*RRSS*/
+.contenedorRS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.containerfb, .containertw, .containerig {
+  margin: 10px;
+}
+
+.gridcontainer2 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas: "img1 img1 img2 img2" "img3 img4 img5 img5" "img6 img4 img9 img8" "img6 img7 img7 img8";
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 51%, rgb(255, 0, 0) 100%);
+}
+
+.prePokes {
+  font-family: "Work Sans";
+  font-size: 100px;
+  text-align: center;
+  color: rgb(28, 4, 250);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 10px 400px;
+}
+
+.imggen, .img9, .img8, .img7, .img6, .img5, .img4, .img3, .img2, .img1 {
+  position: relative;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
+}
+
+.img5 {
+  grid-area: img5;
+}
+
+.img6 {
+  grid-area: img6;
+}
+
+.img7 {
+  grid-area: img7;
+}
+
+.img8 {
+  grid-area: img8;
+}
+
+.img9 {
+  grid-area: img9;
+}
+
+.fotos {
+  height: auto;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background: rgb(85, 31, 127);
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.img1:hover .overlay, .img2:hover .overlay, .img3:hover .overlay, .img4:hover .overlay, .img5:hover .overlay, .img6:hover .overlay, .img7:hover .overlay, .img8:hover .overlay, .img9:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.nombrePokemon {
+  white-space: nowrap;
+  color: goldenrod;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}/*# sourceMappingURL=style.css.map */

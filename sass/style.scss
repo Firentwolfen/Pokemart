@@ -1,0 +1,493 @@
+@mixin tamanos($ancho,$alto){
+  height: $alto;
+  width: $ancho;
+}
+
+.contenedor-footer {
+
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.elementos-footer {
+
+  background-color: black;
+  color: white;
+  align-self: center;
+  justify-self: center;
+  text-decoration: none;
+}
+
+.lista-iconos {
+
+  display: flex;
+  justify-content: space-around;
+}
+
+$iconosredes:(
+twitter:#1DA1F2,
+facebook:#1877f2,
+instagram:#9E37B8,
+youtube:#FF0000,
+);
+
+@each $red,$color in $iconosredes {
+ .footer-#{$red}{
+  background-color: $color;
+}
+}
+/*navbar*/
+
+.contenedor-padre {
+
+  background-color: black;
+  display: flex;
+  padding: 10px;
+}
+
+.contenedor-links {
+
+  justify-content: center;
+}
+
+.elementos-navbar {
+
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 50px 30px;
+  text-decoration: none;
+  border-radius: 10%;
+
+  &:hover {
+
+    background-color: red;
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+  }
+
+  &:active {
+
+    background-color: white;
+    color: black;
+  }
+}
+
+.icono-navbar {
+
+  display: flex;
+  padding: 10px;
+  justify-content: left;
+}
+
+.menuIcono {
+
+  background-color: red;
+  
+  @include tamanos(50px,50px);
+  border-radius: 10px;
+  display: none;
+}
+
+/*index*/
+
+.logosEmpresas {
+
+  justify-content: space-between;
+  padding: 10vh 30vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.imgLogos {
+
+  @include tamanos(300px,300px);
+  border-radius: 10px;
+  margin: 10vh 0vh;
+}
+
+.slogan {
+
+  font-family: 'Work Sans', sans-serif;
+  font-size: 500;
+  margin: 10px 20px;
+  text-align: justify;
+}
+
+.preLogos {
+
+  font-family: 'Work Sans', sans-serif;
+  font-size: 400;
+  text-align: center;
+}
+
+.productoDestacado {
+
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.detallDestac {
+
+  background-color: red;
+  margin: 0px 20px;
+  text-align: justify;
+  border-radius: 40px;
+}
+
+.preDestac {
+
+  padding-top: 30px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 400;
+  text-align: center;
+  color: white;
+
+  &:hover {
+
+    animation: bounce;
+    animation-duration: 2s;
+  }
+}
+
+.parrDestac {
+
+  text-align: justify;
+  color: white;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &:hover {
+
+    animation: flash;
+    animation-duration: 5s;
+  }
+}
+
+.imgDestac {
+  @include tamanos(300px,300px);
+  border-radius: 20px;
+  margin: 20px;
+
+  &:hover {
+
+    animation: bounceIn;
+    animation-duration: 10s;
+  }
+}
+
+.item-a {
+
+  grid-area: header;
+}
+
+.item-b {
+
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.item-c {
+
+  grid-area: footer;
+}
+
+.gridcontainer {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  justify-items: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 15px;
+  background-color: grey;
+}
+
+.seccionProductos {
+
+  padding-bottom: 30px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 400;
+  text-align: center;
+  color: white;
+}
+
+.imgProxProd {
+
+  @include tamanos(300px,300px);
+  border-radius: 20px;
+  margin: 5px;
+}
+
+/*about*/
+
+.sobreNosotros {
+
+  padding: 10px 10px;
+  background-color: rgb(2, 116, 30);
+  display: flex;
+}
+
+.textoNosotros {
+
+  font-family: 'Work Sans', sans-serif;
+  font-size: 50;
+  font-size: large;
+  color: white;
+  text-align: justify;
+  margin-right: 10px;
+}
+
+.preNosotros {
+
+  font-family: 'Work Sans', sans-serif;
+  font-size: 400;
+  text-align: center;
+  color: white;
+}
+
+.yt {
+  @include tamanos(560px,315px);
+}
+
+.slider {
+
+  display: flexbox;
+  width: 100%;
+}
+
+.preSlider {
+
+  font-family: 'Work Sans', sans-serif;
+  font-size: 100px;
+  text-align: center;
+  color: black;
+  background-color: red;
+  border-radius: 10px;
+  margin: 10px 400px;
+}
+
+.tituloSlide, .parrafoSlide {
+
+  border-radius: 500px;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: rgb(255, 255, 255);
+}
+
+/*products*/
+
+.cardProductos {
+
+  justify-content: space-around;
+  padding: 50px;
+  gap: 50px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.imgProducto {
+  @include tamanos(275px,275px);
+}
+
+/*contact*/
+
+.contenedorContacto {
+
+  justify-content: space-between;
+  padding: 10vh 20vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.direccion {
+
+  display: flex;
+  justify-content: center;
+}
+
+.preMapa {
+
+  font-family: 'Work Sans', sans-serif;
+  font-size: 200;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.direccionLocal {
+
+  text-align: center;
+}
+
+.googleMap {
+  @include tamanos(400px,300px);
+}
+
+.formCampos {
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.textCampo {
+
+  margin-bottom: 20px;
+}
+
+.preBoton {
+
+  text-align: center;
+}
+
+.botonForm {
+
+  background-color: brown;
+  color: white;
+  align-self: end;
+}
+
+/*RRSS*/
+
+.contenedorRS {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.containerfb, .containertw, .containerig {
+
+  margin: 10px;
+}
+
+.gridcontainer2 {
+
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas: "img1 img1 img2 img2" "img3 img4 img5 img5" "img6 img4 img9 img8" "img6 img7 img7 img8";
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 51%, rgba(255, 0, 0, 1) 100%);
+}
+
+$estiloPokes:(
+  tipoLetra: 'Work Sans',
+  tamanoLetra: 100px,
+  letraCentrado: center,
+  colorTexto: rgb(28, 4, 250),
+  colorFondo: rgb(255, 255, 255),
+  redondeado: 10px,
+  margenes: 10px 400px,
+);
+
+.prePokes {
+
+  font-family: map-get($estiloPokes, tipoLetra);
+  font-size: map-get($estiloPokes, tamanoLetra );
+  text-align: map-get($estiloPokes, letraCentrado );
+  color: map-get($estiloPokes, colorTexto );
+  background-color:map-get($estiloPokes, colorFondo );
+  border-radius: map-get($estiloPokes, redondeado );
+  margin: map-get($estiloPokes, margenes );
+}
+
+.imggen{
+  position: relative;
+}
+
+.img1{
+@extend .imggen;
+  grid-area: img1;
+}
+
+.img2 {
+  @extend .imggen;
+  grid-area: img2;
+}
+
+.img3 {
+  @extend .imggen;
+  grid-area: img3;
+}
+
+.img4 {
+  @extend .imggen;
+  grid-area: img4;
+}
+
+.img5 {
+  @extend .imggen;
+  grid-area: img5;
+}
+
+.img6 {
+  @extend .imggen;
+  grid-area: img6;
+}
+
+.img7 {
+  @extend .imggen;
+  grid-area: img7;
+}
+
+.img8 {
+  @extend .imggen;
+  grid-area: img8;
+}
+
+.img9 {
+  @extend .imggen;
+  grid-area: img9;
+}
+
+.fotos {
+  @include tamanos(100%,auto);
+  object-fit: contain;
+}
+
+.overlay {
+
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background: rgb(85, 31, 127);
+  overflow: hidden;
+  @include tamanos(100%,0);
+  transition: .5s ease;
+}
+
+.img1:hover .overlay, .img2:hover .overlay, .img3:hover .overlay, .img4:hover .overlay, .img5:hover .overlay, .img6:hover .overlay, .img7:hover .overlay, .img8:hover .overlay, .img9:hover .overlay {
+
+  bottom: 0;
+  height: 100%;
+}
+
+.nombrePokemon {
+    
+  white-space: nowrap;
+  color: goldenrod;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
