@@ -1,5 +1,5 @@
 
-    @media (min-width: 481px) and (max-width: 768px) {
+  @media (min-width:391px) and (max-width:480px) {
  
   .contenedor-footer {
 
@@ -40,19 +40,16 @@ youtube:#FF0000,
   /*navbar*/
 
   .contenedor-padre {
-
     background-color: black;
     display: flex;
     padding: 10px;
   }
 
   .contenedor-links {
-
     justify-content: center;
   }
 
   .elementos-navbar {
-
     display: block;
     background-color: rgb(0, 0, 0);
     margin-bottom: 10px;
@@ -63,7 +60,6 @@ youtube:#FF0000,
   }
 
   .icono-navbar {
-
     display: flex;
     padding: 10px;
     justify-content: left;
@@ -71,15 +67,12 @@ youtube:#FF0000,
   }
 
   .menuIcono {
-
     display: inline;
   }
 
   .desaparece {
-
     display: none;
   }
-
   /*index*/
 
   .logosEmpresas {
@@ -368,12 +361,12 @@ youtube:#FF0000,
   }
   $estiloPokes:(
   tipoLetra: 'Work Sans', 
-  tamanoLetra: 100px,
+  tamanoLetra: 50px,
   letraCentrado: center,
   colorTexto: rgb(28, 4, 250),
   colorFondo: rgb(255, 255, 255),
   redondeado: 10px,
-  margenes: 10px 400px,
+  margenes: 10px 10px,
 );
 
 .prePokes {

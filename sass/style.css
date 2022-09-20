@@ -82,6 +82,11 @@
 }
 
 /*index*/
+.imglogoprincipal {
+  height: auto;
+  width: 100%;
+}
+
 .logosEmpresas {
   justify-content: space-between;
   padding: 10vh 30vh;
@@ -352,7 +357,7 @@
   color: rgb(28, 4, 250);
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  margin: 10px 400px;
+  margin: 10px 40px;
 }
 
 .imggen, .img9, .img8, .img7, .img6, .img5, .img4, .img3, .img2, .img1 {

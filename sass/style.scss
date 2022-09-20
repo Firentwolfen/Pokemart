@@ -95,6 +95,10 @@ youtube:#FF0000,
 
 /*index*/
 
+.imglogoprincipal{
+  @include tamanos(100%,auto);
+}
+
 .logosEmpresas {
 
   justify-content: space-between;
@@ -393,7 +397,7 @@ $estiloPokes:(
   colorTexto: rgb(28, 4, 250),
   colorFondo: rgb(255, 255, 255),
   redondeado: 10px,
-  margenes: 10px 400px,
+  margenes: 10px 40px,
 );
 
 .prePokes {

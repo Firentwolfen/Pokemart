@@ -1,5 +1,10 @@
 @media (min-width: 481px) and (max-width: 768px) {
 
+  @mixin tamanos($ancho,$alto){
+    height: $alto;
+    width: $ancho;
+  }
+  
   .contenedor-footer {
     background-color: black;
     display: flex;
@@ -70,6 +75,10 @@ youtube:#FF0000,
   }
 
   /*index*/
+
+  .imglogoprincipal{
+    @include tamanos(100%,auto);
+  }
 
   .logosEmpresas {
     justify-content: center;
@@ -320,12 +329,12 @@ youtube:#FF0000,
   }
   $estiloPokes:(
   tipoLetra: 'Work Sans', 
-  tamanoLetra: 100px,
+  tamanoLetra: 50px,
   letraCentrado: center,
   colorTexto: rgb(28, 4, 250),
   colorFondo: rgb(255, 255, 255),
   redondeado: 10px,
-  margenes: 10px 400px,
+  margenes: 10px 10px,
 );
 
 .prePokes {

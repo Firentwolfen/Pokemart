@@ -59,6 +59,10 @@
     display: none;
   }
   /*index*/
+  .imglogoprincipal {
+    height: auto;
+    width: 100%;
+  }
   .logosEmpresas {
     justify-content: center;
     padding: 10px 0px;
@@ -269,11 +273,11 @@
   }
   .prePokes {
     font-family: "Work Sans";
-    font-size: 100px;
+    font-size: 50px;
     text-align: center;
     color: rgb(28, 4, 250);
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    margin: 10px 400px;
+    margin: 10px 10px;
   }
 }/*# sourceMappingURL=tabletstyles.css.map */
