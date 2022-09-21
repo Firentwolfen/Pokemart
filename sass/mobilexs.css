@@ -91,7 +91,6 @@
     margin-bottom: 20px;
   }
   .detallDestac {
-    background-color: rgb(218, 32, 32);
     text-align: justify;
     border-radius: 20px;
   }
@@ -100,7 +99,6 @@
     font-family: "Work Sans", sans-serif;
     font-size: 200;
     text-align: center;
-    color: rgb(255, 255, 255);
   }
   /*TODO*/
   .contenido {
@@ -113,7 +111,7 @@
   .parrDestac {
     text-align: justify;
     color: white;
-    padding: 25px;
+    font-size: 12px;
   }
   .imgContainer {
     justify-self: center;
@@ -211,12 +209,11 @@
   /*products*/
   .cardProductos {
     justify-content: space-between;
-    padding: 10vh 30vh;
     display: flex;
     flex-flow: row wrap;
   }
   .imgProducto {
-    width: 100%;
+    width: 90%;
     height: 275px;
   }
   /*contact*/
@@ -226,10 +223,12 @@
     flex-flow: column wrap;
     align-items: center;
     justify-items: center;
+    padding: 0;
   }
   .googleMap {
-    width: 100%;
-    height: 300px;
+    margin-left: 10px;
+    width: 90%;
+    height: auto;
   }
   .mapaContainer {
     margin-top: 40px;

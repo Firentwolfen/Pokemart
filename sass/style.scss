@@ -65,9 +65,10 @@ youtube:#FF0000,
   &:hover {
 
     background-color: red;
-    color: black;
+    color: white;
     text-decoration-line: underline;
     text-decoration-color: white;
+    font-weight:600;
   }
 
   &:active {
@@ -137,7 +138,7 @@ youtube:#FF0000,
 
 .detallDestac {
 
-  background-color: red;
+  background-color: black;
   margin: 0px 20px;
   text-align: justify;
   border-radius: 40px;
@@ -149,7 +150,7 @@ youtube:#FF0000,
   font-family: 'Work Sans', sans-serif;
   font-size: 400;
   text-align: center;
-  color: white;
+  color: goldenrod;
 
   &:hover {
 
@@ -168,8 +169,8 @@ youtube:#FF0000,
 
   &:hover {
 
-    animation: flash;
-    animation-duration: 5s;
+    animation: pulse;
+    animation-duration: 2s;
   }
 }
 
@@ -234,6 +235,11 @@ youtube:#FF0000,
   @include tamanos(300px,300px);
   border-radius: 20px;
   margin: 5px;
+
+  &:hover {
+    animation: flip;
+    animation-duration: 1s;
+  }
 }
 
 /*about*/
@@ -243,6 +249,7 @@ youtube:#FF0000,
   padding: 10px 10px;
   background-color: rgb(2, 116, 30);
   display: flex;
+  margin: 15px;
 }
 
 .textoNosotros {
@@ -252,7 +259,7 @@ youtube:#FF0000,
   font-size: large;
   color: white;
   text-align: justify;
-  margin-right: 10px;
+  margin: 15px;
 }
 
 .preNosotros {
@@ -304,7 +311,30 @@ youtube:#FF0000,
 
 .imgProducto {
   @include tamanos(275px,275px);
+  align-self: center;
+  margin-top: 5px;
 }
+
+.cardInd{
+  background-color: blue;
+  width: 18rem;
+}
+
+.textoCard{
+  color: yellow;
+}
+
+.botonCard{
+  background-color: red;
+  color: white;
+  font-weight:600;
+  &:hover {
+
+    background-color: purple;
+    color: white;
+  }
+}
+
 
 /*contact*/
 

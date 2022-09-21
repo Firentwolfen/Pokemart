@@ -56,11 +56,12 @@
 }
 .elementos-navbar:hover {
   background-color: red;
-  color: black;
+  color: white;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   -webkit-text-decoration-color: white;
           text-decoration-color: white;
+  font-weight: 600;
 }
 .elementos-navbar:active {
   background-color: white;
@@ -120,7 +121,7 @@
 }
 
 .detallDestac {
-  background-color: red;
+  background-color: black;
   margin: 0px 20px;
   text-align: justify;
   border-radius: 40px;
@@ -131,7 +132,7 @@
   font-family: "Work Sans", sans-serif;
   font-size: 400;
   text-align: center;
-  color: white;
+  color: goldenrod;
 }
 .preDestac:hover {
   -webkit-animation: bounce;
@@ -148,10 +149,10 @@
   padding-right: 10px;
 }
 .parrDestac:hover {
-  -webkit-animation: flash;
-          animation: flash;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .imgDestac {
@@ -214,12 +215,19 @@
   border-radius: 20px;
   margin: 5px;
 }
+.imgProxProd:hover {
+  -webkit-animation: flip;
+          animation: flip;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
 
 /*about*/
 .sobreNosotros {
   padding: 10px 10px;
   background-color: rgb(2, 116, 30);
   display: flex;
+  margin: 15px;
 }
 
 .textoNosotros {
@@ -228,7 +236,7 @@
   font-size: large;
   color: white;
   text-align: justify;
-  margin-right: 10px;
+  margin: 15px;
 }
 
 .preNosotros {
@@ -276,6 +284,27 @@
 .imgProducto {
   height: 275px;
   width: 275px;
+  align-self: center;
+  margin-top: 5px;
+}
+
+.cardInd {
+  background-color: blue;
+  width: 18rem;
+}
+
+.textoCard {
+  color: yellow;
+}
+
+.botonCard {
+  background-color: red;
+  color: white;
+  font-weight: 600;
+}
+.botonCard:hover {
+  background-color: purple;
+  color: white;
 }
 
 /*contact*/

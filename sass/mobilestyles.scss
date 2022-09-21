@@ -116,7 +116,6 @@ youtube:#FF0000,
 
   .detallDestac {
 
-    background-color: rgb(218, 32, 32);
     text-align: justify;
     border-radius: 20px;
   }
@@ -127,7 +126,7 @@ youtube:#FF0000,
     font-family: 'Work Sans', sans-serif;
     font-size: 200;
     text-align: center;
-    color: rgb(255, 255, 255);
+    
   }
 
   .parrDestac {
@@ -160,7 +159,7 @@ youtube:#FF0000,
 
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-items: center;
     align-items: center;
@@ -176,9 +175,9 @@ youtube:#FF0000,
   .gridcontainer {
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "header header header" "main main main" "footer footer footer";
+    grid-template-areas: "header header" "main main" "footer footer";
     justify-items: center;
     align-items: center;
     column-gap: 10px;
@@ -273,7 +272,7 @@ youtube:#FF0000,
 
   .imgProducto {
 
-    width: 100%;
+    width: 90%;
     height: 275px;
   }
 
