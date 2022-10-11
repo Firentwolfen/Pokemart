@@ -47,6 +47,7 @@ youtube:#FF0000,
 
   .contenedor-links {
     justify-content: center;
+    transition: all .3s;
   }
 
   .elementos-navbar {
@@ -73,7 +74,17 @@ youtube:#FF0000,
   .desaparece {
     display: none;
   }
+
   /*index*/
+
+  .imglogoprincipal{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
 
   .logosEmpresas {
 

@@ -78,6 +78,9 @@ youtube:#FF0000,
 
   .imglogoprincipal{
     @include tamanos(100%,auto);
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
   }
 
   .logosEmpresas {

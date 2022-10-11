@@ -78,6 +78,14 @@ youtube:#FF0000,
 
   /*index*/
 
+  .imglogoprincipal{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
   .logosEmpresas {
 
     justify-content: center;

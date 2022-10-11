@@ -61,6 +61,14 @@
     display: none;
   }
   /*index*/
+  .imglogoprincipal {
+    height: auto;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
   .logosEmpresas {
     justify-content: center;
     padding: 10px 0px;

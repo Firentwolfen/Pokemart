@@ -97,7 +97,10 @@ youtube:#FF0000,
 /*index*/
 
 .imglogoprincipal{
-  @include tamanos(100%,auto);
+  height: auto;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
 }
 
 .logosEmpresas {
@@ -228,6 +231,7 @@ youtube:#FF0000,
   font-size: 400;
   text-align: center;
   color: white;
+
 }
 
 .imgProxProd {
@@ -236,10 +240,6 @@ youtube:#FF0000,
   border-radius: 20px;
   margin: 5px;
 
-  &:hover {
-    animation: flip;
-    animation-duration: 1s;
-  }
 }
 
 /*about*/
