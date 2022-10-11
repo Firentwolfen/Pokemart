@@ -294,8 +294,8 @@
 }
 
 .botonCard {
-  background-color: red;
-  color: white;
+  background-color: pink;
+  color: black;
   font-weight: 600;
 }
 .botonCard:hover {
